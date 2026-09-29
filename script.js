@@ -8,6 +8,14 @@ const projects = Array.from({ length: 15 }, (_, i) => {
   };
 });
 
+// Manual scroll restoration and load reset
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = "manual";
+}
+if (!window.location.hash) {
+  window.scrollTo(0, 0);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const projectsGrid = document.getElementById("projectsGrid");
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
