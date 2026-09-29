@@ -11,7 +11,7 @@ Example of how to edit:
 const projects = [
   {
     title: "Real AI Project 01",
-    description: "This project uses agentic workflows to do X.",
+    team: "TEAM: Alpha",
     url: "https://example.com/project-1"
   },
   // Add exactly 15 objects here...
